@@ -1,0 +1,8 @@
+python_packages:
+  - ansible
+  - bs4
+  - numpy
+  - pandas
+  - psycopg2
+  - scipy
+  - xgboost

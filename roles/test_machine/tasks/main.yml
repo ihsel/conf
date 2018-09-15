@@ -1,0 +1,11 @@
+- name: import packages
+  include_vars: "packages.yml"
+
+- name: set up python
+  apt: name=python3-pip state=present
+  pip3: name=setuptools state=present
+
+- name: install python packages
+  pip: name={{ item }} state=present
+  loop: "{{ python_packages }}"
+  
