@@ -8,4 +8,6 @@ python_packages:
   - xgboost
 
 system_packages:
+  - cmake
+  - g++
   - vim
