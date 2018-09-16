@@ -9,9 +9,12 @@ python_packages:
   - xgboost
 
 system_packages:
+  - build-essential
   - cmake
   - g++
   - gedit
   - postgresql
   - postgresql-contrib
+  - python-dev
+  - python3-dev
   - vim

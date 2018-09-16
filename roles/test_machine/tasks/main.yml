@@ -5,6 +5,17 @@
   apt: name={{ item }} state=present
   loop: "{{ system_packages }}"
 
+- name: download boost c++ libraries
+  unarchive:
+    src: https://dl.bintray.com/boostorg/release/1.68.0/source/boost_1_68_0.tar.bz2
+    dest: /tmp/boost_1_68_0
+    remote_src: yes
+
+- name: install boost c++ libraries
+  shell: ./bootstrap.sh && ./b2 install
+  args:
+    chdir: /tmp/boost_1_68_0
+
 # Set Up Python and Install Required Python Packages
 - name: set up python
   apt: name=python3-pip state=present
