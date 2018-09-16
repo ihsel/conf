@@ -13,6 +13,7 @@ system_packages:
   - cmake
   - g++
   - gedit
+  - nodejs
   - postgresql
   - postgresql-contrib
   - python-dev
