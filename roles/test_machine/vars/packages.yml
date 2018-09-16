@@ -1,6 +1,7 @@
 python_packages:
   - ansible
   - bs4
+  - python-logstash
   - numpy
   - pandas
   - psycopg2
@@ -11,4 +12,6 @@ system_packages:
   - cmake
   - g++
   - gedit
+  - postgresql
+  - postgresql-contrib
   - vim
