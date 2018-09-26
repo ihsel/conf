@@ -2,7 +2,9 @@ python_packages:
   - ansible
   - bs4
   - python-logstash
+  - matplotlib
   - numpy
+  - opencv-python
   - pandas
   - psycopg2
   - scipy
