@@ -9,6 +9,7 @@ python_packages:
   - psycopg2
   - scipy
   - xgboost
+  - xlrd
 
 system_packages:
   - build-essential
