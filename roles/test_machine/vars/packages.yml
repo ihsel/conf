@@ -21,4 +21,5 @@ system_packages:
   - postgresql-contrib
   - python-dev
   - python3-dev
+  - python3-apt
   - vim
