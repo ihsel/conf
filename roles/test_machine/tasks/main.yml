@@ -6,7 +6,7 @@
   apt: name={{ item }} state=present
   loop: "{{ system_packages }}"
 
-- name: Download python 3.6.7
+- name: Download Python 3.6.7
   unarchive:
     src: "https://www.python.org/ftp/python/3.6.7/Python-3.6.7.tgz"
     dest: /tmp/
@@ -19,13 +19,13 @@
     chdir: /tmp/Python-3.6.7
 
 # Set Up Python and Install Required Python Packages
-- name: Set up python
+- name: Set up Python
   apt: name=python3.6-pip state=present
 
 - name: Install pip setuptools
   pip: name=setuptools state=present
 
-- name: Install python packages
+- name: Install Python packages
   pip: name={{ item }} state=present
   loop: "{{ python_packages }}"
   
