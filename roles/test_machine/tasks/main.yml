@@ -18,13 +18,6 @@
   args:
     chdir: /tmp/Python-3.6.7
 
-# Set Up Python and Install Required Python Packages
-- name: Set up Python
-  apt: name=python3.6-pip state=present
-
-- name: Install pip setuptools
-  pip: name=setuptools state=present
-
 - name: Install Python packages
   pip: name={{ item }} state=present
   loop: "{{ python_packages }}"
