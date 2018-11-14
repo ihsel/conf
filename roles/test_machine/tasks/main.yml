@@ -14,7 +14,7 @@
     remote_src: yes
 
 - name: Install Python 3.6.7
-  command: "./configure --enable-optimizations && make altinstall"
+  shell: "./configure --enable-optimizations && make altinstall"
   args:
     chdir: /tmp/Python-3.6.7
 
@@ -37,6 +37,6 @@
     remote_src: yes
 
 - name: Install boost c++ libraries
-  command: "./bootstrap.sh && ./b2 install"
+  command: "./bootstrap.sh; ./b2 install"
   args:
     chdir: /tmp/boost_1_68_0
